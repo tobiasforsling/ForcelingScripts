@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InstanceScript : MonoBehaviour {
     public GameObject Model1;
+    public Vector3 InitialOffset;
     public Vector3 Offset;
     public Vector3 Rotation;
     [HideInInspector]
@@ -29,6 +30,8 @@ public class InstanceScript : MonoBehaviour {
 
     public void Buildobject()
     {
+        NewPos += InitialOffset;
+
         for(int i = 0; i < NumberofClones; i++)
         {
             //Checking if a model has been assigned, if yes loop is broken
