@@ -1,3 +1,4 @@
-/AmplifyShaderEditor/
-/Amplify*/
-/ammo_box/
+/Assets/AmplifyShaderEditor/
+*AmplifyShader*
+/Assets/Amplify*/
+*ammo_box*
