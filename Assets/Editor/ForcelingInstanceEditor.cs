@@ -6,7 +6,7 @@ using UnityEditor;
 [CustomEditor(typeof(ForcelingInstance))]
 public class ForcelingInstanceEditor : Editor
 {
-    
+
     public override void OnInspectorGUI()
     {
         ForcelingInstance myscript = (ForcelingInstance)target;
@@ -46,19 +46,19 @@ public class ForcelingInstanceEditor : Editor
         GUILayout.EndHorizontal();
         
         //Displaying messages whether clones have been created or not
-        if (InstanceScript. Clonesexist == 1)
+        if (ForcelingInstance. Clonesexist == 1)
         {
             EditorGUILayout.HelpBox("Clones are spawned", MessageType.Info);
         }
         
         //Displaying message if clones doesnt exist
-        if (InstanceScript. Clonesexist == 2)
+        if (ForcelingInstance. Clonesexist == 2)
         {
             EditorGUILayout.HelpBox("No clones created", MessageType.Warning);
         }
 
         //Displaying error if model is not assigend
-        if (InstanceScript.Modelisassigned == 2)
+        if (ForcelingInstance.Modelisassigned == 2)
         {
             EditorGUILayout.HelpBox("A model or prefab must be assigned", MessageType.Error);
         }

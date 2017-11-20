@@ -21,7 +21,6 @@ public class ForcelingInstance: MonoBehaviour {
     public int NumberofClones;
     public bool UseRandomRotation = false;
 
-
     public void CalculateRandomRot()
     {
         //Use a random factor that user gives that affects the actual rotation values
