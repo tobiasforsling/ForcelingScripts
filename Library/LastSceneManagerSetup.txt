@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/InstanceScript_demo.unity
+- path: Assets/Transparency_test.unity
   isLoaded: 1
   isActive: 1
