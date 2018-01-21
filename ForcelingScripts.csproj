@@ -219,6 +219,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ForcelingControlPanel.cs" />
     <Compile Include="Assets\ForcelingInstance.cs" />
     <Compile Include="Assets\InstanceScript.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />

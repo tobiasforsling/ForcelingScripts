@@ -273,6 +273,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editor\ForcelingControlPanelEditor.cs" />
     <Compile Include="Assets\Editor\ForcelingInstanceEditor.cs" />
     <Compile Include="Assets\Editor\InstanceEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
