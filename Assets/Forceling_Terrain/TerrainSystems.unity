@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: a19ff44f9b60ba749b596cef971e848c,
     type: 2}
   m_UseShadowmask: 1
@@ -191,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 823659081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 377.06998, y: 2.9, z: 237.23999}
+  m_LocalPosition: {x: 302.96, y: 7.1, z: 269.67}
   m_LocalScale: {x: 3.3695831, y: 3.3695846, z: 3.3695846}
   m_Children: []
   m_Father: {fileID: 0}
@@ -340,7 +341,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974538850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 368.99997, y: 2.9, z: 233.12}
+  m_LocalPosition: {x: 294.88998, y: 6.33, z: 265.55002}
   m_LocalScale: {x: 3.3695831, y: 3.3695846, z: 3.3695846}
   m_Children: []
   m_Father: {fileID: 0}
@@ -424,7 +425,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483905205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 377.49, y: 2.9, z: 227.4}
+  m_LocalPosition: {x: 303.38, y: 9.77, z: 259.83002}
   m_LocalScale: {x: 3.3695831, y: 3.3695846, z: 3.3695846}
   m_Children: []
   m_Father: {fileID: 0}
@@ -494,6 +495,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -504,8 +506,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1486133106}
-  m_LocalRotation: {x: 0.0039645424, y: 0.9933573, z: -0.036087975, w: 0.10919378}
-  m_LocalPosition: {x: 363.964, y: 3.947383, z: 242.21513}
+  m_LocalRotation: {x: -0.016422197, y: -0.84004986, z: 0.025475426, w: -0.541662}
+  m_LocalPosition: {x: 280.6128, y: 9.2398205, z: 270.1482}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -566,7 +568,7 @@ Terrain:
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 1
-  m_SplatMapDistance: 275
+  m_SplatMapDistance: 2000
   m_HeightmapMaximumLOD: 0
   m_CastShadows: 1
   m_DrawHeightmap: 1
