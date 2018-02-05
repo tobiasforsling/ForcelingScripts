@@ -11,22 +11,6 @@ public class ForcelingControlPanelEditor : Editor
         ForcelingControlPanel myscript = (ForcelingControlPanel)target;
 
         DrawDefaultInspector();
-        GUILayout.Space(10);
-
-        GUILayout.BeginHorizontal();
-        GUILayout.FlexibleSpace();
-        if (GUILayout.Button("Enable", GUILayout.Height(40), GUILayout.Width(120)))
-        {
-            myscript.Enable();
-        }
-
-        if (GUILayout.Button("Disable", GUILayout.Height(40), GUILayout.Width(120)))
-        {
-            myscript.Disable();
-        }
-
-        GUILayout.FlexibleSpace();
-        GUILayout.EndHorizontal();
 
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
@@ -36,9 +20,50 @@ public class ForcelingControlPanelEditor : Editor
             myscript.EnablePostProcess();
         }
 
+        if (GUILayout.Button("Disable Post Processing", GUILayout.Height(40), GUILayout.Width(200)))
+        {
+            myscript.DisablePostProcess();
+        }
 
         GUILayout.FlexibleSpace();
         GUILayout.EndHorizontal();
 
+        GUILayout.BeginHorizontal();
+        GUILayout.FlexibleSpace();
+
+        if (GUILayout.Button("Enable Directional Light", GUILayout.Height(40), GUILayout.Width(200)))
+        {
+            myscript.EnableDirLight();
+        }
+
+        if (GUILayout.Button("Disable Directional Light", GUILayout.Height(40), GUILayout.Width(200)))
+        {
+            myscript.DisableDirLight();
+        }
+
+        GUILayout.FlexibleSpace();
+        GUILayout.EndHorizontal();
+
+        GUILayout.BeginHorizontal();
+        GUILayout.FlexibleSpace();
+
+        if (GUILayout.Button("Enable Cubes", GUILayout.Height(40), GUILayout.Width(200)))
+        {
+            myscript.EnableCubes();
+        }
+
+        if (GUILayout.Button("Disable Cubes", GUILayout.Height(40), GUILayout.Width(200)))
+        {
+            myscript.DisableCubes();
+        }
+
+        GUILayout.FlexibleSpace();
+        GUILayout.EndHorizontal();
+
+        //Displaying message if manipulated object is not assigned
+        if (ForcelingControlPanel.Objectmissing == 1)
+        {
+            EditorGUILayout.HelpBox("The object you are trying to control is not assigned", MessageType.Error);
+        }
     }
 }
