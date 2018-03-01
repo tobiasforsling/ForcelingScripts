@@ -673,6 +673,7 @@
     <Compile Include="Assets\Editor\ForcelingInstanceEditor.cs" />
     <Compile Include="Assets\Editor\InstanceEditor.cs" />
     <Compile Include="Assets\Editor\NormalMapProcessor.cs" />
+    <Compile Include="Assets\Editor\SkyboxProcessor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
