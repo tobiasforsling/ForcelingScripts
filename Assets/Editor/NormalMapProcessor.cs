@@ -14,15 +14,16 @@ public class NormalMapProcessor : AssetPostprocessor
 
         if (hasSkyID)
         {
-            Debug.Log("Sky_ is found in filepath");
+            //Debug.Log("Sky_ is found in filepath");
             TextureImporter textureImporter = (TextureImporter)assetImporter;
             textureImporter.textureType = TextureImporterType.Default;
             textureImporter.textureShape = TextureImporterShape.TextureCube;
+            textureImporter.wrapMode = TextureWrapMode.Repeat;
         }
 
         if (hasNormalID)
         {
-            Debug.Log("_n. is found in filepath");
+            //Debug.Log("_n. is found in filepath");
             TextureImporter textureImporter = (TextureImporter)assetImporter;
             textureImporter.textureType = TextureImporterType.NormalMap;
         }
