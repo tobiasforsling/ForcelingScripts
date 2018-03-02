@@ -5,7 +5,7 @@ using UnityEditor;
 
 public class SkyboxProcessor : AssetPostprocessor
 {
-
+/*
     void OnPostprocessTexture(Texture2D texture)
     {
         string lowerCaseAssetPath = assetPath.ToLower();
@@ -17,5 +17,5 @@ public class SkyboxProcessor : AssetPostprocessor
             TextureImporter textureImporter = (TextureImporter)assetImporter;
             textureImporter.textureShape = TextureImporterShape.TextureCube;
         }
-    }
+    }*/
 }

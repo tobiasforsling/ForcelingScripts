@@ -10,6 +10,15 @@ public class NormalMapProcessor : AssetPostprocessor
     {
         string lowerCaseAssetPath = assetPath.ToLower();
         bool hasNormalID = lowerCaseAssetPath.IndexOf("_n.") != -1;
+        bool hasSkyID = lowerCaseAssetPath.IndexOf("sky_") != -1;
+
+        if (hasSkyID)
+        {
+            Debug.Log("Sky_ is found in filepath");
+            TextureImporter textureImporter = (TextureImporter)assetImporter;
+            textureImporter.textureType = TextureImporterType.Default;
+            textureImporter.textureShape = TextureImporterShape.TextureCube;
+        }
 
         if (hasNormalID)
         {
