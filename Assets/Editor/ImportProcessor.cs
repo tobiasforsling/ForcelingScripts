@@ -3,14 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class NormalMapProcessor : AssetPostprocessor
+public class ImportProcessor : AssetPostprocessor
 {
+    /*
+    string lowerCaseAssetPath = assetPath.ToLower();
+
+    void OnPostprocessModel()
+    {
+
+
+        if (hasFbxID)
+        {
+            //Debug.Log(".fbx is found in filepath");
+            ModelImporter modelimporter = (ModelImporter)assetImporter;
+            ModelImporter.mat = TextureImporterType.Default;
+            textureImporter.textureShape = TextureImporterShape.TextureCube;
+            textureImporter.wrapMode = TextureWrapMode.Repeat;
+        }
+    }
+    */
 
     void OnPostprocessTexture(Texture2D texture)
     {
-        string lowerCaseAssetPath = assetPath.ToLower();
         bool hasNormalID = lowerCaseAssetPath.IndexOf("_n.") != -1;
         bool hasSkyID = lowerCaseAssetPath.IndexOf("sky_") != -1;
+        bool hasFbxID = lowerCaseAssetPath.IndexOf(".fbx1") != -1;
 
         if (hasSkyID)
         {
@@ -27,5 +44,7 @@ public class NormalMapProcessor : AssetPostprocessor
             TextureImporter textureImporter = (TextureImporter)assetImporter;
             textureImporter.textureType = TextureImporterType.NormalMap;
         }
+
+
     }
 }
