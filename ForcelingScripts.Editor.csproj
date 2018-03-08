@@ -710,6 +710,11 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\01_Shaders\Forceling Transparency(Opaque).shader" />
+    <None Include="Assets\01_Shaders\Forceling Transparency(Translucent).shader" />
+    <None Include="Assets\01_Shaders\Forceling WorldSpaceGrid.shader" />
+    <None Include="Assets\01_Shaders\Forceling_EmissiveTest.shader" />
+    <None Include="Assets\05_ForcelingTerrain\Forceling_terrain_FirstPass.shader" />
     <None Include="Assets\AmplifyShaderEditor\ChangeLog.txt" />
     <None Include="Assets\AmplifyShaderEditor\CreatingTerrainsWithASE.txt" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Community\2Sided\2Sided.shader" />
@@ -942,11 +947,6 @@
     <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Templates\Sprites-Default.shader" />
     <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Templates\UIDefault.shader" />
     <None Include="Assets\AmplifyShaderEditor\Readme.txt" />
-    <None Include="Assets\Environment\Forceling Transparency(Opaque).shader" />
-    <None Include="Assets\Environment\Forceling Transparency(Translucent).shader" />
-    <None Include="Assets\Environment\Forceling_EmissiveTest.shader" />
-    <None Include="Assets\Forceling WorldSpaceGrid\Forceling WorldSpaceGrid.shader" />
-    <None Include="Assets\Forceling_Terrain\Forceling_terrain_FirstPass.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
