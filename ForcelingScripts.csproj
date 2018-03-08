@@ -282,6 +282,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\02_Scripts\ForcelingControlPanel.cs" />
+    <Compile Include="Assets\02_Scripts\ForcelingInstance.cs" />
+    <Compile Include="Assets\02_Scripts\InstanceScript.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Community\ForceShield\ForceShieldDestroyBall.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Community\ForceShield\ForceShieldImpactDetection.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Community\ForceShield\ForceShieldShootBall.cs" />
@@ -291,9 +294,6 @@
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Official\Smear\Smear.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\Sobel\PostProcessExample.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Official\TemplateExamples\Sprites\SpriteMask\SpriteMaskController.cs" />
-    <Compile Include="Assets\ForcelingControlPanel.cs" />
-    <Compile Include="Assets\ForcelingInstance.cs" />
-    <Compile Include="Assets\InstanceScript.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -341,6 +341,15 @@
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\01_Shaders\Forceling Transparency(Opaque).shader" />
+    <None Include="Assets\01_Shaders\Forceling Transparency(Translucent).shader" />
+    <None Include="Assets\01_Shaders\Forceling WorldSpaceGrid.shader" />
+    <None Include="Assets\01_Shaders\Forceling_DepthFade.shader" />
+    <None Include="Assets\01_Shaders\Forceling_EmissiveTest.shader" />
+    <None Include="Assets\01_Shaders\Forceling_Ghost.shader" />
+    <None Include="Assets\01_Shaders\Forceling_NewStandard.shader" />
+    <None Include="Assets\01_Shaders\Forceling_NewStandard_NOCULL.shader" />
+    <None Include="Assets\01_Shaders\Forceling_Terrain_FirstPass.shader" />
     <None Include="Assets\AmplifyShaderEditor\ChangeLog.txt" />
     <None Include="Assets\AmplifyShaderEditor\CreatingTerrainsWithASE.txt" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Community\2Sided\2Sided.shader" />
@@ -378,6 +387,7 @@
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ParallaxOcclusionMappingPOM\SandPOM.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ParallaxOffsetFakeInterior\ParallaxWindow.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\PositionCutoff\LocalPosCutoff.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\RadialUVDistortion\RadialUVDistortion.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReadFromAtlasTiled\ImprovedReadFromAtlasTiled.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReadFromAtlasTiled\ReadFromAtlasTiled.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReflectRefractSoapBubble\ReflectRefractSoapBubble.shader" />
@@ -573,11 +583,6 @@
     <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Templates\Sprites-Default.shader" />
     <None Include="Assets\AmplifyShaderEditor\Plugins\EditorResources\Templates\UIDefault.shader" />
     <None Include="Assets\AmplifyShaderEditor\Readme.txt" />
-    <None Include="Assets\Environment\Forceling Transparency(Opaque).shader" />
-    <None Include="Assets\Environment\Forceling Transparency(Translucent).shader" />
-    <None Include="Assets\Environment\Forceling_EmissiveTest.shader" />
-    <None Include="Assets\Forceling WorldSpaceGrid\Forceling WorldSpaceGrid.shader" />
-    <None Include="Assets\Forceling_Terrain\Forceling_terrain_FirstPass.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />

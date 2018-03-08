@@ -643,6 +643,7 @@
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplateShaderPropertyNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplatesManager.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplatesStencilBufferModule.cs" />
+    <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplateTagsModule.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplateVertexData.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Templates\TemplateVertexDataNode.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Plugins\Editor\Utils\ASETextureArrayCreator.cs" />
@@ -713,8 +714,12 @@
     <None Include="Assets\01_Shaders\Forceling Transparency(Opaque).shader" />
     <None Include="Assets\01_Shaders\Forceling Transparency(Translucent).shader" />
     <None Include="Assets\01_Shaders\Forceling WorldSpaceGrid.shader" />
+    <None Include="Assets\01_Shaders\Forceling_DepthFade.shader" />
     <None Include="Assets\01_Shaders\Forceling_EmissiveTest.shader" />
-    <None Include="Assets\05_ForcelingTerrain\Forceling_terrain_FirstPass.shader" />
+    <None Include="Assets\01_Shaders\Forceling_Ghost.shader" />
+    <None Include="Assets\01_Shaders\Forceling_NewStandard.shader" />
+    <None Include="Assets\01_Shaders\Forceling_NewStandard_NOCULL.shader" />
+    <None Include="Assets\01_Shaders\Forceling_Terrain_FirstPass.shader" />
     <None Include="Assets\AmplifyShaderEditor\ChangeLog.txt" />
     <None Include="Assets\AmplifyShaderEditor\CreatingTerrainsWithASE.txt" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Community\2Sided\2Sided.shader" />
@@ -752,6 +757,7 @@
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ParallaxOcclusionMappingPOM\SandPOM.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ParallaxOffsetFakeInterior\ParallaxWindow.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\PositionCutoff\LocalPosCutoff.shader" />
+    <None Include="Assets\AmplifyShaderEditor\Examples\Official\RadialUVDistortion\RadialUVDistortion.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReadFromAtlasTiled\ImprovedReadFromAtlasTiled.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReadFromAtlasTiled\ReadFromAtlasTiled.shader" />
     <None Include="Assets\AmplifyShaderEditor\Examples\Official\ReflectRefractSoapBubble\ReflectRefractSoapBubble.shader" />
