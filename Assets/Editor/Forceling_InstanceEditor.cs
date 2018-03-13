@@ -3,34 +3,48 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(ForcelingInstance))]
-public class ForcelingInstanceEditor : Editor
+[CustomEditor(typeof(Forceling_Instance))]
+public class InstanceEditor : Editor
 {
+
+
 
     public override void OnInspectorGUI()
     {
-        ForcelingInstance myscript = (ForcelingInstance)target;
+        Forceling_Instance ForcelingInstance = (Forceling_Instance)target;
 
         DrawDefaultInspector();
 
         GUILayout.Space(10);
 
-        //Horizontal slot for spawn and delete buttons
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
-        if (GUILayout.Button("Spawn Clones",  GUILayout.Height(40), GUILayout.Width(120)))
+        //Horizontal slot for spawn and delete buttons
+        if (GUILayout.Button("Spawn Clones", GUILayout.Height(40), GUILayout.Width(120)))
         {
-            myscript.Killchildren();
-            myscript.CalculateRandomRot();
-            myscript.Buildobject();
+            ForcelingInstance.Killchildren();
+            ForcelingInstance.BuildMultiple();
         }
         GUILayout.FlexibleSpace();
         if (GUILayout.Button("Delete Clones", GUILayout.Height(40), GUILayout.Width(120)))
         {
-            myscript.Killchildren();
+            ForcelingInstance.Killchildren();
         }
         GUILayout.FlexibleSpace();
         GUILayout.EndHorizontal();
+
+        //DISPLAY ERROR IF AMOUNT IS 0
+        if (ForcelingInstance.NumberOfObjects.Length == 0)
+        {
+            EditorGUILayout.HelpBox("Amount of objects shouldn't be 0", MessageType.Error);
+        }
+
+        //DISAPLY ERROR IF OBJECT FIELDS ARE EMPTY
+        if (Forceling_Instance.Modelisassigned == 2)
+        {
+            EditorGUILayout.HelpBox("All objects must be assigned", MessageType.Error);
+        }
+
 
         GUILayout.Space(10);
 
@@ -39,28 +53,24 @@ public class ForcelingInstanceEditor : Editor
         GUILayout.FlexibleSpace();
         if (GUILayout.Button("Refresh", GUILayout.Height(40), GUILayout.Width(120)))
         {
-              myscript.Killchildren();
-              myscript.Buildobject();
+            ForcelingInstance.Killchildren();
+            ForcelingInstance.BuildMultiple();
         }
         GUILayout.FlexibleSpace();
         GUILayout.EndHorizontal();
         
+        //DISPLAYING MESSAGES AT BOTTOM OF INSPECTOR
+
         //Displaying messages whether clones have been created or not
-        if (ForcelingInstance. Clonesexist == 1)
+        if (Forceling_Instance. Clonesexist == 1)
         {
             EditorGUILayout.HelpBox("Clones are spawned", MessageType.Info);
         }
         
         //Displaying message if clones doesnt exist
-        if (ForcelingInstance. Clonesexist == 2)
+        if (Forceling_Instance. Clonesexist == 2)
         {
             EditorGUILayout.HelpBox("No clones created", MessageType.Warning);
-        }
-
-        //Displaying error if model is not assigend
-        if (ForcelingInstance.Modelisassigned == 2)
-        {
-            EditorGUILayout.HelpBox("A model or prefab must be assigned", MessageType.Error);
         }
     }
 }

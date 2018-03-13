@@ -259,6 +259,12 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="AssetStoreTools">
+      <HintPath>Assets/AssetStoreTools/Editor/AssetStoreTools.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetStoreToolsExtra">
+      <HintPath>Assets/AssetStoreTools/Editor/AssetStoreToolsExtra.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/tobia/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -280,12 +286,6 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/tobia/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-    <Reference Include="AssetStoreTools">
-      <HintPath>Assets/AssetStoreTools/Editor/AssetStoreTools.dll</HintPath>
-    </Reference>
-    <Reference Include="AssetStoreToolsExtra">
-      <HintPath>Assets/AssetStoreTools/Editor/AssetStoreToolsExtra.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Community\ForceShield\ForceShieldDestroyBall.cs" />
@@ -298,8 +298,7 @@
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\Sobel\PostProcessExample.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Official\TemplateExamples\Sprites\SpriteMask\SpriteMaskController.cs" />
     <Compile Include="Assets\Forceling\ForcelingControlPanel\ForcelingControlPanel.cs" />
-    <Compile Include="Assets\Forceling\ForcelingInstance\ForcelingInstance.cs" />
-    <Compile Include="Assets\Forceling\ForcelingInstance\InstanceScript.cs" />
+    <Compile Include="Assets\Forceling\ForcelingInstance\Forceling_Instance.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />

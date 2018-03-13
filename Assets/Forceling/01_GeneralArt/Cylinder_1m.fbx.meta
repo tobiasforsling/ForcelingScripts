@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 08090615ecb9ae347a08f1bb3d508bcc
-timeCreated: 1511477132
+guid: e5fe6815a02e81d439d9ba9dd0569734
+timeCreated: 1520977258
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,13 +9,13 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube1
+    4300000: Cylinder_1m
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: phong1
-    second: {fileID: 2100000, guid: aeeaac55f137bc44e965bccc83d4ee4e, type: 2}
+      name: TestShapes_mat
+    second: {fileID: 2100000, guid: 92c9aa27effa06c42a102f148ba9be67, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
